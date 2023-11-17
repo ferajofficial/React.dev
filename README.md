@@ -1,2 +1,2 @@
 #Hello there 👋
-Started React development from scrath
+Started React development from scratch
