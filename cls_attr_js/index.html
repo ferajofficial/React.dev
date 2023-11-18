@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Link rel="style" type="css/text" href="style.css" media="screen">
+    </Link>
+    <style>
+        .body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+
+            background-color: lightblue;
+        }
+
+        .button {
+            color: aliceblue;
+            background-color: black;
+
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name "city":</p>
+
+    <button class="button" onclick="hideFunction()">Hide elements</button>
+    <button class="button" onclick="showFunction()">Show elements</button>
+
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <script>
+        function hideFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        function showFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
